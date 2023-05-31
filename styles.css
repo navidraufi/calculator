@@ -1,0 +1,133 @@
+:root{
+
+    --first-color:#a6e3e9;
+    --second-color:#e3fdfd;
+    --btn-color: #cbf1f5;
+    --text-color:hsl(var(--hue),12%,45%);
+    --body-color:#e3fdfd;
+
+}
+
+
+body{
+    text-align: center;
+    background-color: var(--body-color);
+    font-family:"Montserrat", sans-serif;
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.darkMode{
+    --first-color:#112629;
+    --second-color:#48747a;
+    --btn-color: #08282c;
+    --text-color:#e3fdfd;
+    --body-color:#224b4bfd;  
+
+}
+
+
+
+
+
+.main_container{
+    display: inline-block;
+}
+
+.sandb{
+    background-color: var(--first-color);
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    height: 35rem;
+    width: 21rem;
+    box-shadow: 0px 0px 20px 5px var(--second-color);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1.2rem;
+    color: var(--text-color);
+    
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.btn{
+    background-color: var(--btn-color);
+    border-radius: 50%;
+    padding-top: 25px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow:inset 0px 0px 20px 5px var(--second-color) ;
+    transition: .3s;
+    font-size: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+.btn:active{
+    transform: scale(.8);
+}
+.btn:hover{
+    background-color: var(--second-color);
+}
+
+#screen{
+    padding: 20px;
+    height: auto;
+    width: auto;
+    outline:none;
+    border: none;
+    height: 55%;
+    width: 85%;
+    font-size: 1.5rem;
+    box-shadow:inset 0px 0px 10px 10px var(--second-color);
+    backdrop-filter: blur(20px);
+    background-color: var(--body-color);
+    border-radius: 15px;
+    border: solid 1px var(--first-color);
+}
+
+.inputer{
+    color: var(--text-color);
+}
+
+.icon{
+
+    position: relative;
+    left: 175px;
+    margin: 10px;
+    cursor: pointer;
+
+font-size: 1.2rem;
+transition: .3s;
+ 
+}
+
+.icon:active{
+    transform: scale(0.95);
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+
+.moon{
+    
+    color: var(--text-color)
+}
+
+.sun{
+    color: var(--text-color);
+}
+
+.invisible{
+    display: none;
+}
+
+
+@media screen and (max-width:512px){
+    .main_container{
+        margin-top: 90px;
+    }
+    
+}
